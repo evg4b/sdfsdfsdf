@@ -1,6 +1,10 @@
-console.log(process.args);
-console.log('publisher.js');
-console.log('module.exports:', module?.exports);
-console.log('exports:', exports);
-console.log('this:', this);
-console.log(process.env);
+const fs = require('fs');
+const path = require('path');
+
+fs.readFile(path.join(__dirname, 'data.txt'), 'utf8', (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(data);
+});
