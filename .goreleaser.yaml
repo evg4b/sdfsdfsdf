@@ -26,5 +26,5 @@ builds:
 
 publishers:
   - name: my-publisher
-    cmd: curl -d "{{ .Version }} {{ abs .ArtifactPath }} {{ .ReleaseNotes }}" -X POST http://localhost:3333
+    cmd: pwd && curl -d "{{ .Version }} {{ abs .ArtifactPath }} {{ .ReleaseNotes }}" -X POST http://localhost:3333
     dir: demo
