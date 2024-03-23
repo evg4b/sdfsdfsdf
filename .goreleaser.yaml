@@ -26,4 +26,4 @@ builds:
 
 publishers:
   - name: my-publisher
-    cmd: echo '{ .Version }} {{ abs .ArtifactPath }}' > payload.txt
+    cmd: echo '{ .Version }} {{ abs .ArtifactPath }}'
