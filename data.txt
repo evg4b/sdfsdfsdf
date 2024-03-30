@@ -1,1 +1,1 @@
-["/Users/evg4b/.nvm/versions/node/v20.9.0/bin/node","/Users/evg4b/Desktop/go-package/publisher.js","0.0.15","/Users/evg4b/Desktop/go-package/dist/go-package_0.0.15_darwin_arm64.tar.gz","darwin","arm64"]
+["/Users/evg4b/.nvm/versions/node/v20.9.0/bin/node","/Users/evg4b/Desktop/go-package/publisher.js","0.0.14","/Users/evg4b/Desktop/go-package/dist/go-package_0.0.14_linux_386.tar.gz","linux","386"]
