@@ -23,7 +23,3 @@ builds:
       - windows
       - darwin
       - linux
-
-publishers:
-  - name: my-publisher
-    cmd: node publisher.js "{{ .Version }}" "{{ abs .ArtifactPath }}" "{{ .Os }}" "{{ .Arch }}"
