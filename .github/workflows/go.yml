@@ -1,8 +1,8 @@
 name: go-package
 
 on:
-  pull_request:
   push:
+    tags: ['*']
 
 permissions:
   contents: write
