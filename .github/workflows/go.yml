@@ -33,5 +33,5 @@ jobs:
           node-version: 18
       - name: run
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx -y goreleaser-npm-publisher publish --clear --project .
