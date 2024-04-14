@@ -34,7 +34,9 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: goreleaser-npm-publisher publish
         run: npx -y goreleaser-npm-publisher publish --clear --project . --builder "go-package" --prefix "@wserdtryftvubhijnokmpl"
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
