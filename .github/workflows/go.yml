@@ -34,4 +34,4 @@ jobs:
       - name: run
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx -y goreleaser-npm-publisher publish --clear --project .
+        run: npx -y goreleaser-npm-publisher publish --clear --project . --builder "go-package"
