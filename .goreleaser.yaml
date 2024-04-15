@@ -15,6 +15,11 @@ before:
     - go mod tidy
     # you may remove this if you don't need go generate
     - go generate ./...
+archives:
+  - format: tar.gz
+    id: tarball
+  - format: zip
+    id: zipball234
 
 builds:
   - env:
