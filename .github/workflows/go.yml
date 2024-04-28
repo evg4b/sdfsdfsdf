@@ -29,7 +29,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Test Action
-        uses: evg4b/goreleaser-npm-publisher-action@latest
+        uses: evg4b/goreleaser-npm-publisher-action@debug
         with:
           milliseconds: 1000
 
