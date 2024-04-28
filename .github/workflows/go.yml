@@ -29,9 +29,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Test Action
-        uses: evg4b/goreleaser-npm-publisher-action@test-repo
+        uses: evg4b/goreleaser-npm-publisher-action@v0.0.1-alpha.10
         with:
-          milliseconds: 1000
+          project: '.'
+          builder: go-package
+          description: A simple dev HTTP/HTTPS reverse proxy for replacing CORS headers.
+          prefix: '@wserdtryftvubhijnokmpl'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - uses: actions/setup-node@v4
         with:
