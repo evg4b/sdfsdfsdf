@@ -39,6 +39,6 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: goreleaser-npm-publisher publish
-        run: npx -y goreleaser-npm-publisher@latest publish --clear --project . --builder "go-package" --prefix "@wserdtryftvubhijnokmpl"
+        run: npx -y goreleaser-npm-publisher@latest publish --clear --project . --builder "go-package" --prefix "@wserdtryftvubhijnokmpl" --description "A simple dev HTTP/HTTPS reverse proxy for replacing CORS headers."
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
